@@ -1,0 +1,199 @@
+<div class="sidebar">
+  <div class="sidebar-inner-index">
+    <ul class="main-menu">
+      <%- partial('partials/main_menu', { context: 'sidebar' }) %>
+    </ul>
+  </div>
+</div>
+
+<div id="hero">
+  <div class="inner">
+    <div class="left">
+      <img class="hero-logo" src="<%- url_for("/images/code.png") %>" alt="vue logo">
+    </div><div class="right">
+      <h2 class="vue">Font End station</h2>
+      <h1>
+        Font End<br>Resource/Interview/Learn
+      </h1>
+      <p>
+        <!-- <a id="modal-player" class="button has-icon" href="javascript:;">
+          <%- partial('icons/play') %>
+          WHY VUE.JS?</a> -->
+        <a class="button white" href="<%- url_for("/v2/guide/") %>">GET STARTED</a>
+        <a class="button gray has-icon" href="https://github.com/yuanchao614/yuanchao614.github.io" target="_blank">
+          <%- partial('icons/github-dark') %>
+          GITHUB</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="highlights">
+  <div class="inner">
+    <div class="point">
+      <h2>FrameWork</h2>
+      <p>Angular、Vue、React Learning/resource</p>
+    </div>
+
+    <div class="point">
+      <h2>Font End Basic</h2>
+      <p>Records HTML、CSS、Javscript resource</p>
+    </div>
+
+    <div class="point">
+      <h2>Interview</h2>
+      <p>
+        Recourds Font End Interview Resource
+      </p>
+    </div>
+  </div>
+</div>
+<!-- 
+<div id="sponsors">
+  <div class="inner">
+    <%- partial('partials/sponsors') %>
+  </div>
+</div> -->
+
+<!-- <div id="news">
+  <div class="inner">
+    <h3><label for="member_email">Subscribe to our Weekly Newsletter</label></h3>
+    <form
+      class="newsletter-form"
+      id="revue-form"
+      name="revue-form"
+      target="_blank"
+      action="https://www.getrevue.co/profile/vuenewsletter/add_subscriber"
+      method="post"
+      @submit="subscribe"
+    >
+      <input
+        class="newsletter-input"
+        type="email"
+        name="member[email]"
+        id="member_email"
+        required
+        placeholder="Email address"
+      >
+      <input
+        class="button newsletter-button"
+        type="submit"
+        value="Subscribe"
+        name="member[subscribe]"
+        id="member_submit"
+      >
+    </form>
+    <p>
+      You can read the previous issues and listen to our podcast at <a href="https://news.vuejs.org" target="_blank">news.vuejs.org</a>.
+    </p>
+  </div>
+</div> -->
+<div id="special-sponsor">
+    <a href="https://angular.cn/" target="_blank">
+      <h3>Angular</h3>
+      <img src="<%- url_for("/images/angular.png") %>" alt="Code.xyz Logo">
+      <br>
+      <span></span>
+    </a>
+    <a href="https://zh-hans.reactjs.org/" target="_blank">
+        <h3>React</h3>
+        <img src="<%- url_for("/images/React.png") %>" alt="Code.xyz Logo">
+        <br>
+        <span></span>
+      </a>
+      <a href="https://vuejs.org" target="_blank">
+          <h3>Vue</h3>
+          <img src="<%- url_for("/images/VUE.png") %>" alt="Code.xyz Logo">
+          <br>
+          <span></span>
+        </a>
+        <a href="http://es6.ruanyifeng.com/" target="_blank">
+            <h3>ES6</h3>
+            <img src="<%- url_for("/images/es6.png") %>" alt="Code.xyz Logo">
+            <br>
+            <span></span>
+          </a>
+  </div>
+  <div id="special-sponsor">
+      <a href="http://www.typescriptlang.org/" target="_blank">
+          <h3>TypeScript</h3>
+          <img src="<%- url_for("/images/typescript.png") %>" alt="Code.xyz Logo">
+          <br>
+          <span></span>
+      </a>
+    <a href="https://www.webpackjs.com/" target="_blank">
+        <h3>WebPack</h3>
+        <img src="<%- url_for("/images/Webpack.png") %>" alt="Code.xyz Logo">
+        <br>
+        <span></span>
+    </a>
+    <a href="https://git-scm.com/" target="_blank">
+        <h3>GIT</h3>
+        <img src="<%- url_for("/images/git.png") %>" alt="Code.xyz Logo">
+        <br>
+        <span></span>
+      </a>
+      <a href="https://code.visualstudio.com/" target="_blank">
+          <h3>VsCode</h3>
+          <img src="<%- url_for("/images/vscode.png") %>" alt="Code.xyz Logo">
+          <br>
+          <span></span>
+        </a>
+  </div>
+
+<div id="footer">
+  <p>
+    <a class="social-icon" href="" target="_blank">
+      <%- partial('icons/github') %>
+    </a>
+    <a class="social-icon" href="" target="_blank">
+      <%- partial('icons/twitter') %>
+    </a>
+    <a class="social-icon" href="" target="_blank">
+      <%- partial('icons/medium') %>
+    </a>
+  </p>
+  <p>Borrowed the vue official website template to record some knowledge in front-end development<a href="https://vue.org" target="_blank">Vue.org</a><br>
+  By &copy; 2019-<%- new Date().getFullYear() %> Yuan Chao</p>
+</div>
+
+<div id="video-modal" class="modal">
+  <div class="video-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/247494684" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div><script src="https://player.vimeo.com/api/player.js"></script>
+  <p class="modal-text">Video by <a href="https://www.vuemastery.com" target="_blank" rel="noopener" title="Vue.js Courses on Vue Mastery">Vue Mastery</a>. Watch Vue Mastery’s free <a href="https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/" target="_blank" rel="noopener" title="Vue.js Courses on Vue Mastery">Intro to Vue course</a>.
+  </p>
+</div>
+
+<script>
+(function () {
+  var topScrolled = false
+  var sponsors = document.getElementById('sponsors')
+  var sponsorTop = sponsors.offsetTop
+  var sponsorActive = false
+
+  window.addEventListener('resize', function () {
+    sponsorTop = sponsors.offsetTop
+  })
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 165 && !topScrolled) {
+      topScrolled = true
+      document.getElementById('mobile-bar').classList.remove('top')
+    } else if (window.pageYOffset <= 165 && topScrolled) {
+      topScrolled = false
+      document.getElementById('mobile-bar').classList.add('top')
+    }
+    if (window.pageYOffset > sponsorTop - 100) {
+      if (!sponsorActive) {
+        sponsorActive = true
+        sponsors.classList.add('active')
+      }
+    } else {
+      if (sponsorActive) {
+        sponsorActive = false
+        sponsors.classList.remove('active')
+      }
+    }
+  })
+})()
+</script>

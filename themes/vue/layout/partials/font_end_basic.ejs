@@ -1,0 +1,10 @@
+<li class="nav-dropdown-container support-vue">
+  <a href="/get_start_page/" class="nav-link">Font End Basic</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a href="<%- url_for("/v2/html/") %>" class="nav-link<%- page.path.match(/\/html(\/|$)/) ? ' current' : '' %>">HTML</a></li>
+      <li><a href="<%- url_for("/v2/css/") %>" class="nav-link<%- page.path.match(/\/css(\/|$)/) ? ' current' : '' %>">CSS</a></li>
+      <li><a href="<%- url_for("/v2/js/") %>" class="nav-link<%- page.path.match(/\/js(\/|$)/) ? ' current' : '' %>">JavaScript</a></li>
+    </ul></li>
+  </ul>
+</li>

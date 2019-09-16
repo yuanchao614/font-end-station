@@ -1,0 +1,15 @@
+<li>
+  <!-- <form id="search-form">
+    <input type="text" id="search-query-<%- context %>" class="search-query st-default-search-input">
+  </form> -->
+</li>
+<%- partial('partials/font_end_basic') %>
+<%- partial('partials/framework') %>
+<!-- <%- partial('partials/ecosystem_dropdown') %> -->
+<li>
+  <a href="<%- url_for("/v2/typescript/") %>" class="nav-link<%- page.path.match(/\/typescript(\/|$)/) ? ' current' : '' %>">TypeScript</a>
+</li>
+<li>
+  <a href="<%- url_for("/v2/network/") %>" class="nav-link<%- page.path.match(/\/network(\/|$)/) ? ' current' : '' %>">NetWork</a>
+</li>
+<%- partial('partials/interview_menu') %>

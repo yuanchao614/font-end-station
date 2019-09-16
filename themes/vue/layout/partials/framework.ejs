@@ -1,0 +1,12 @@
+<li class="nav-dropdown-container learn">
+  <a class="nav-link<%- page.path.match(/\/(guide(?!\/team.html$)|vue|react|network|typescript)(\/|$)/) ? ' current' : '' %>">Framework</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li>
+      <ul>
+        <li><a href="<%- url_for("/v2/angular/") %>" class="nav-link<%- page.path.match(/\/angular(\/|$)/) ? ' current' : '' %>">Angular</a></li>
+        <li><a href="<%- url_for("/v2/vue/") %>" class="nav-link<%- page.path.match(/\/vue(\/|$)/) ? ' current' : '' %>">Vue</a></li>
+        <li><a href="<%- url_for("/v2/react/") %>" class="nav-link<%- page.path.match(/\/react(\/|$)/) ? ' current' : '' %>">React</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
